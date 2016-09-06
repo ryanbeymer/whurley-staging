@@ -1,6 +1,6 @@
 #Getting setup
 - Install Hugo (https://gohugo.io/)
-- Run `hugo --theme=whurley`
+- Run `hugo server`
 
 # Todo List
 - 
