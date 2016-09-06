@@ -1,0 +1,4 @@
+name = "whurley"
+description = "A hugo theme using bootstrap"
+homepage = "http://whurley.com"
+tags = ["blog", "technical", "personal"]
