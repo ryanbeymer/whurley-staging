@@ -5,11 +5,6 @@
 # Todo List
 - 
 
-# Assets
-https://drive.google.com/file/d/0B057pmb0XdXOVDgtNE44YkxhOVU/view
-
-
-
 ##Content
 1. Link to Doc of raw content
 - https://docs.google.com/document/d/1dbLAQN-40lRZhnQUrQF5v-hrsK4ZmxtcIXXuXGUQoMw/edit
