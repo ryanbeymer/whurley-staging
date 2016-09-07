@@ -1,0 +1,135 @@
+//http://stackoverflow.com/questions/15221434/can-i-merge-a-font-family-in-css-to-have-more-font-varians-via-font-face
+$font_dir: '../fonts/';
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-BlackItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-BlackItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-BlackItalic-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-BlackItalic-Web.woff') format('woff');
+  font-weight:  800;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-Black-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-Black-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-Black-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-Black-Web.woff') format('woff');
+  font-weight:  800;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-BoldItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-BoldItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-BoldItalic-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-BoldItalic-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-Bold-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-Bold-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-Bold-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-Bold-Web.woff') format('woff');
+  font-weight:  700;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-SemiboldItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-SemiboldItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-SemiboldItalic-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-SemiboldItalic-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-Semibold-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-Semibold-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-Semibold-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-Semibold-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-MediumItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-MediumItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-MediumItalic-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-MediumItalic-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-Medium-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-Medium-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-RegularItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-RegularItalic-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-RegularItalic-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-Regular-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-Regular-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-LightItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-LightItalic-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-LightItalic-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-Light-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-Light-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
