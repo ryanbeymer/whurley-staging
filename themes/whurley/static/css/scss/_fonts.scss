@@ -1,4 +1,17 @@
 //http://stackoverflow.com/questions/15221434/can-i-merge-a-font-family-in-css-to-have-more-font-varians-via-font-face
+
+/*
+100    Extra Light or Ultra Light
+200    Light or Thin
+300    Book or Demi
+400    Normal or Regular
+500    Medium
+600    Semibold, Demibold
+700    Bold
+800    Black, Extra Bold or Heavy
+900    Extra Black, Fat, Poster or Ultra Black
+*/
+
 $font_dir: '../fonts/';
 
 @font-face {
@@ -118,7 +131,7 @@ $font_dir: '../fonts/';
   src: url('#{$font_dir}graphik/Graphik-LightItalic-Web.eot?#iefix') format('embedded-opentype'),
        url('#{$font_dir}graphik/Graphik-LightItalic-Web.woff2') format('woff2'),
        url('#{$font_dir}graphik/Graphik-LightItalic-Web.woff') format('woff');
-  font-weight:  300;
+  font-weight:  200;
   font-style:   italic;
   font-stretch: normal;
 }
@@ -129,7 +142,29 @@ $font_dir: '../fonts/';
   src: url('#{$font_dir}graphik/Graphik-Light-Web.eot?#iefix') format('embedded-opentype'),
        url('#{$font_dir}graphik/Graphik-Light-Web.woff2') format('woff2'),
        url('#{$font_dir}graphik/Graphik-Light-Web.woff') format('woff');
-  font-weight:  300;
+  font-weight:  200;
   font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-ExtralightItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-ExtralightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-Extralight-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-Extralight-Web.woff') format('woff');
+  font-weight:  100;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('#{$font_dir}graphik/Graphik-ExtralightItalic-Web.eot');
+  src: url('#{$font_dir}graphik/Graphik-ExtralightItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('#{$font_dir}graphik/Graphik-ExtralightItalic-Web.woff2') format('woff2'),
+       url('#{$font_dir}graphik/Graphik-ExtralightItalic-Web.woff') format('woff');
+  font-weight:  100;
+  font-style:   italic;
   font-stretch: normal;
 }
