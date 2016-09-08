@@ -42,7 +42,10 @@ p {
 
 .cover { 
   background-color: $black;
+  height: 100vh;
+  .container.cover-content {
 
+  }
 }
 
 .section-head { 
