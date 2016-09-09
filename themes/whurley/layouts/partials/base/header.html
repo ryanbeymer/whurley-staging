@@ -7,7 +7,7 @@
       <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
         <a class="navbar-brand" href="{{.Site.BaseURL}}">{{ .Site.Title }}</a>
         <ul class="nav navbar-nav">
-          {{ range .Site.Data.Menu }}
+          {{ range .Site.Data.HeaderMenu }}
           <li class="nav-item">
             <a href="{{ .URL | absURL }}" class="nav-link" 
               {{ if and ( isset . "Title" ) ( ne .Title "" ) }} title="{{ .Title }}"{{ end }}>
