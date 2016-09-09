@@ -1,0 +1,19 @@
+[wikipedia]
+    Name = "Wikipedia"
+    IconClass = "fa-info-circle"
+    URL = "https://en.wikipedia.org/wiki/Whurley"
+
+[facebook]
+    Name = "Facebook"
+    IconClass = "fa-info-circle"
+    URL = "https://www.facebook.com/whurley/"
+
+[linkedin]
+    Name = "Linkedin"
+    IconClass = "fa-info-circle"
+    URL = "https://www.linkedin.com/in/whurley"
+
+[vimeo]
+    Name = "Vimeo"
+    IconClass = "fa-info-circle"
+    URL = "https://vimeo.com/whurley"

@@ -33,4 +33,12 @@ $(function(){
     player.api('setVolume', 0);
     console.log('shh....');
   });
+
+  var waypointElement = 'digital-citizen';
+  var waypoint = new Waypoint({
+    element: document.getElementById(waypointElement),
+    handler: function(direction) {
+      console.log(waypointElement)
+    }
+  })
 });

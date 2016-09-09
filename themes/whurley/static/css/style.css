@@ -6582,16 +6582,98 @@ p {
 .cover {
   background-color: #000000;
   height: 100vh;
+  position: relative;
+  margin-top: -54px;
+}
+.cover .cover-content {
+  top: 0;
+  position: absolute;
+  height: 100vh;
+  color: #FFFFFF;
+  max-width: 703px;
+  /* Align the bootstrap's container vertically */
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  /* Make it a flex container */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+   hence the bootstrap's container won't be aligned to the center anymore.
+   Therefore, we should use the following declarations to get it centered again */
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.cover .cover-content h1 {
+  margin-bottom: 24px;
+}
+.cover .cover-content p {
+  margin-bottom: 85px;
+}
+.cover .cover-content a {
+  color: #FFFFFF;
 }
 
+header {
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+}
+header a {
+  color: #FFFFFF;
+}
+
+.btn-play img {
+  position: relative;
+  top: -1px;
+  padding-right: 16px;
+}
+
+.page-jump-container {
+  position: relative;
+}
+.page-jump-container .page-jump {
+  background-color: #BB0000;
+  height: 108px;
+  width: 108px;
+  line-height: 108px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: -93px;
+}
+.page-jump-container .page-jump.invert {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  bottom: 72px;
+}
+
+.section-head {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.section-head + .section-head {
+  padding-top: 0;
+}
 .section-head h1, .section-head p, .section-head img {
   margin-left: 110px;
 }
 .section-head h1 + img, .section-head p + img, .section-head img + img {
-  margin-left: 0;
+  margin-left: 32px;
 }
-.section-head h1 {
-  margin-bottom: 24px;
+.section-head h1, .section-head img {
+  margin-bottom: 25px;
 }
 
 .article-overview .row:after {
@@ -6621,6 +6703,13 @@ p {
 
 .gallery-imgs {
   background-color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  padding-top: 180px;
+  padding-bottom: 180px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
