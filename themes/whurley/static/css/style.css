@@ -6705,6 +6705,31 @@ header a {
   background-color: #000000;
 }
 
+.thumbnail-content [class*="col-"] {
+  position: relative;
+}
+.thumbnail-content [class*="col-"] > a {
+  width: 360px;
+  height: 260px;
+  background-color: #FFFFFF;
+  position: absolute;
+  padding-left: 40px;
+  padding-right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.thumbnail-content [class*="col-"] > a div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.thumbnail-content [class*="col-"] > a div img {
+  margin-right: 9px;
+}
+.thumbnail-content [class*="col-"] > a div h2 {
+  margin-top: 14px;
+}
+
 footer {
   background-color: #000000;
   padding-top: 180px;

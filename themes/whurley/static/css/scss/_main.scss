@@ -178,6 +178,33 @@ header {
   background-color: $black;
 }
 
+.thumbnail-content { 
+  [class*="col-"] {
+    position: relative;
+    > a {
+      width: 360px;
+      height: 260px;
+      background-color: $white;
+      position: absolute;
+      padding-left: 40px;
+      padding-right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      div { 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        img { 
+          margin-right: 9px;
+        }
+        h2 { 
+          margin-top: 14px;
+        }
+      }
+    }
+  }
+}
+
 footer { 
   background-color: $black; 
   padding-top: 180px;
