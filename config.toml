@@ -2,3 +2,55 @@ baseurl = "http://whurley.com/"
 languageCode = "en-us"
 title = "Whurley"
 theme = "whurley"
+
+[[menu.main]]
+    Name = "digital citizen"
+    Title = "digital citizen"
+    URL = "#digital"
+
+[[menu.main]]
+    Name = "speaker + author"
+    Title = "speaker + author"
+    URL = "#speaker"
+
+[[menu.main]]
+    Name = "entrepreneur + innovator"
+    Title = "entrepreneur + innovator"
+    URL = "#entrepreneur"
+
+
+
+[[menu.social]]
+    Name = "Wikipedia"
+    Identifier = "Wikipedia.png"
+    URL = "https://en.wikipedia.org/wiki/Whurley"
+
+[[menu.social]]
+    Name = "Facebook"
+    Identifier = "Facebook.png"
+    URL = "https://www.facebook.com/whurley/"
+
+[[menu.social]]
+    Name = "Linkedin"
+    Identifier = "Twitter.png"
+    URL = "https://www.linkedin.com/in/whurley"
+
+[[menu.social]]
+    Name = "Vimeo"
+    Identifier = "Vimeo.png"
+    URL = "https://vimeo.com/whurley"
+
+
+
+[[menu.footer]]
+    name = "about hugo"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -110
+    identifier = "about"
+    url = "/about/"
+[[menu.footer]]
+    name = "getting started"
+    pre = "<i class='fa fa-road'></i>"
+    weight = -100
+    url = "/getting-started/"
+    parent = "about"

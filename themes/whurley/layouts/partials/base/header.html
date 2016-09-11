@@ -9,13 +9,9 @@
           <img src="{{ "whurley-logo.png.png" | relURL }}" class="img-fluid">
         </a>
         <ul class="nav navbar-nav">
-          {{ range .Site.Data.HeaderMenu }}
+          {{ range .Site.Menus.main }}
           <li class="nav-item">
-            <a href="{{ .URL | absURL }}" class="nav-link" 
-              {{ if and ( isset . "Title" ) ( ne .Title "" ) }} title="{{ .Title }}"{{ end }}>
-              {{ if and ( isset . "IconClass" ) ( ne .IconClass "" )  }}
-                <i class="fa {{ .IconClass }}"></i>
-              {{ end }}
+            <a href="{{ .URL | absURL }}" class="nav-link">
               {{ .Name }}
             </a>
           </li>
@@ -23,12 +19,10 @@
         </ul>
         <div class="pull-xs-right social">
           <ul class="nav navbar-nav pull-xs-right">
-            {{ range .Site.Data.Social }}
+            {{ range .Site.Menus.social }}
             <li class="nav-item">
               <a href="{{ .URL | absURL }}">
-                {{ if and ( isset . "Image" ) ( ne .Image "" )  }}
-                  <img src="{{ .Image  | relURL }}" class="img-fluid">
-                {{ end }}
+                  <img src="{{ .Identifier  | relURL }}" class="img-fluid">
               </a>
             </li>
             {{ end }}

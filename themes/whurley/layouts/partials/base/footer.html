@@ -16,25 +16,25 @@
     <div class="row">
     <ul class="sidebar-menu">
           {{ $currentNode := . }}
-          {{ range .Site.Data.FooterMenu }}
+          {{ range .Site.Menus.footer }}
               {{ if .HasChildren }}
 
-            <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+            <li class="sub-menu{{if $currentNode.HasMenuCurrent "footer" . }} active{{end}}">
             <a href="javascript:;" class="">
-                {{ .pre }}
-                <span>{{ .name }}</span>
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
                 <span class="menu-arrow arrow_carrot-right"></span>
             </a>
             <ul class="sub">
                 {{ range .Children }}
-                <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}><a href="{{.url}}"> {{ .name }} </a> </li>
+                <li{{if $currentNode.IsMenuCurrent "footer" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
                 {{ end }}
             </ul>
           {{else}}
             <li>
-            <a class="" href="{{.url}}">
-                {{ .pre }}
-                <span>{{ .name }}</span>
+            <a class="" href="{{.URL}}">
+                {{ .Pre }}
+                <span>{{ .Name }}</span>
             </a>
           {{end}}
           </li>
