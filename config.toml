@@ -7,12 +7,10 @@ theme = "whurley"
   Name = "digital citizen"
   Title = "digital citizen"
   URL = "#digital"
-
 [[menu.main]]
   Name = "speaker + author"
   Title = "speaker + author"
   URL = "#speaker"
-
 [[menu.main]]
   Name = "entrepreneur + innovator"
   Title = "entrepreneur + innovator"
@@ -21,24 +19,25 @@ theme = "whurley"
 
 
 [[menu.social]]
-  Name = "Wikipedia"
-  Identifier = "Wikipedia.png"
-  URL = "https://en.wikipedia.org/wiki/Whurley"
-
-[[menu.social]]
   Name = "Facebook"
   Identifier = "Facebook.png"
   URL = "https://www.facebook.com/whurley/"
-
+  weight = 1
 [[menu.social]]
-  Name = "Linkedin"
+  Name = "Twitter"
   Identifier = "Twitter.png"
-  URL = "https://www.linkedin.com/in/whurley"
-
+  URL = "https://twitter.com/whurley"
+  weight = 2
+[[menu.social]]
+  Name = "Wikipedia"
+  Identifier = "Wikipedia.png"
+  URL = "https://en.wikipedia.org/wiki/Whurley"
+  weight = 3
 [[menu.social]]
   Name = "Vimeo"
   Identifier = "Vimeo.png"
   URL = "https://vimeo.com/whurley"
+  weight = 4
 
 
 
@@ -88,15 +87,23 @@ theme = "whurley"
   identifier = "social"
 [[menu.footer]]
   name = "Twitter"
-  url = "/Twitter/"
+  url = "https://twitter.com/whurley"
   parent = "social"
 [[menu.footer]]
   name = "Facebook"
-  url = "/Facebook/"
+  url = "https://www.facebook.com/whurley/"
   parent = "social"
 [[menu.footer]]
   name = "LinkedIn"
-  url = "/LinkedIn/"
+  url = "https://www.linkedin.com/in/whurley"
+  parent = "social"
+[[menu.footer]]
+  Name = "Wikipedia"
+  URL = "https://en.wikipedia.org/wiki/Whurley"
+  parent = "social"
+[[menu.footer]]
+  Name = "Vimeo"
+  URL = "https://vimeo.com/whurley"
   parent = "social"
 
 [[menu.footer]]

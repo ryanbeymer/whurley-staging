@@ -6781,15 +6781,18 @@ footer {
   color: #FFFFFF;
 }
 footer a {
+  font-size: 18px;
   color: #FFFFFF;
 }
 footer li.sub-menu {
   list-style: none;
 }
 footer li.sub-menu > span {
+  font-size: 18px;
   text-decoration: underline;
   margin-bottom: 10px;
   display: block;
+  font-weight: 600;
 }
 footer li.sub-menu ul.sub {
   list-style: none;

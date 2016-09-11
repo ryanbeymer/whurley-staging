@@ -259,15 +259,17 @@ footer {
   padding-bottom: 180px;
   color: $white;
   a {
+    font-size: 18px;
     color: $white;
   }
   li.sub-menu { 
     list-style: none;
     > span {
+      font-size: 18px;
       text-decoration: underline;
       margin-bottom: 10px;
       display: block;
-
+      font-weight: 600;
     }
     ul.sub {
       list-style: none; 

@@ -21,7 +21,7 @@
           <ul class="nav navbar-nav pull-xs-right">
             {{ range .Site.Menus.social }}
             <li class="nav-item">
-              <a href="{{ .URL | absURL }}">
+              <a href="{{ .URL | absURL }}" target="_blank">
                   <img src="{{ .Identifier  | relURL }}" class="img-fluid">
               </a>
             </li>
