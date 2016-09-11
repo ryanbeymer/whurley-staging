@@ -251,4 +251,23 @@ footer {
   a {
     color: $white;
   }
+  li.sub-menu { 
+    list-style: none;
+    > span {
+      text-decoration: underline;
+      margin-bottom: 10px;
+      display: block;
+
+    }
+    ul.sub {
+      list-style: none; 
+      padding-left: 0;
+      li { 
+        margin-bottom: 10px;
+        a:hover { 
+          color: $white;
+        }
+      }
+    }
+  }
 }

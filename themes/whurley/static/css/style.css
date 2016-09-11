@@ -6773,5 +6773,23 @@ footer {
 footer a {
   color: #FFFFFF;
 }
+footer li.sub-menu {
+  list-style: none;
+}
+footer li.sub-menu > span {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  display: block;
+}
+footer li.sub-menu ul.sub {
+  list-style: none;
+  padding-left: 0;
+}
+footer li.sub-menu ul.sub li {
+  margin-bottom: 10px;
+}
+footer li.sub-menu ul.sub li a:hover {
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=style.css.map */

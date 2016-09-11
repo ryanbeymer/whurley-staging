@@ -6,40 +6,26 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-sm-2">Link</div>
-      <div class="col-sm-2">Link</div>
-      <div class="col-sm-2">Link</div>
-      <div class="col-sm-2">Link</div>
-      <div class="col-sm-2">Link</div>
-      <div class="col-sm-2">Link</div>
-    </div>
-    <div class="row">
-    <ul class="sidebar-menu">
-          {{ $currentNode := . }}
-          {{ range .Site.Menus.footer }}
-              {{ if .HasChildren }}
-
-            <li class="sub-menu{{if $currentNode.HasMenuCurrent "footer" . }} active{{end}}">
-            <a href="javascript:;" class="">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
-                <span class="menu-arrow arrow_carrot-right"></span>
-            </a>
+      {{ $currentNode := . }}
+      {{ range .Site.Menus.footer }}
+        {{ if .HasChildren }}
+        <div class="col-sm-2">
+          <li class="text-xs-center text-sm-left sub-menu{{if $currentNode.HasMenuCurrent "footer" . }} active{{end}}">
+            <span class="">{{ .Name }}</span>
             <ul class="sub">
-                {{ range .Children }}
-                <li{{if $currentNode.IsMenuCurrent "footer" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
-                {{ end }}
+              {{ range .Children }}
+              <li{{if $currentNode.IsMenuCurrent "footer" . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+              {{ end }}
             </ul>
           {{else}}
-            <li>
+          <li>
             <a class="" href="{{.URL}}">
-                {{ .Pre }}
-                <span>{{ .Name }}</span>
+              <span>{{ .Name }}</span>
             </a>
           {{end}}
           </li>
-          {{end}}
-        </ul>
+        </div>
+      {{end}}
     </div>
   </div>
 </footer>

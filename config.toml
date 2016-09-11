@@ -4,53 +4,151 @@ title = "Whurley"
 theme = "whurley"
 
 [[menu.main]]
-    Name = "digital citizen"
-    Title = "digital citizen"
-    URL = "#digital"
+  Name = "digital citizen"
+  Title = "digital citizen"
+  URL = "#digital"
 
 [[menu.main]]
-    Name = "speaker + author"
-    Title = "speaker + author"
-    URL = "#speaker"
+  Name = "speaker + author"
+  Title = "speaker + author"
+  URL = "#speaker"
 
 [[menu.main]]
-    Name = "entrepreneur + innovator"
-    Title = "entrepreneur + innovator"
-    URL = "#entrepreneur"
+  Name = "entrepreneur + innovator"
+  Title = "entrepreneur + innovator"
+  URL = "#entrepreneur"
 
 
 
 [[menu.social]]
-    Name = "Wikipedia"
-    Identifier = "Wikipedia.png"
-    URL = "https://en.wikipedia.org/wiki/Whurley"
+  Name = "Wikipedia"
+  Identifier = "Wikipedia.png"
+  URL = "https://en.wikipedia.org/wiki/Whurley"
 
 [[menu.social]]
-    Name = "Facebook"
-    Identifier = "Facebook.png"
-    URL = "https://www.facebook.com/whurley/"
+  Name = "Facebook"
+  Identifier = "Facebook.png"
+  URL = "https://www.facebook.com/whurley/"
 
 [[menu.social]]
-    Name = "Linkedin"
-    Identifier = "Twitter.png"
-    URL = "https://www.linkedin.com/in/whurley"
+  Name = "Linkedin"
+  Identifier = "Twitter.png"
+  URL = "https://www.linkedin.com/in/whurley"
 
 [[menu.social]]
-    Name = "Vimeo"
-    Identifier = "Vimeo.png"
-    URL = "https://vimeo.com/whurley"
+  Name = "Vimeo"
+  Identifier = "Vimeo.png"
+  URL = "https://vimeo.com/whurley"
 
 
 
 [[menu.footer]]
-    name = "about hugo"
-    pre = "<i class='fa fa-heart'></i>"
-    weight = -110
-    identifier = "about"
-    url = "/about/"
+  name = "Press:"
+  weight = 1
+  identifier = "press"
 [[menu.footer]]
-    name = "getting started"
-    pre = "<i class='fa fa-road'></i>"
-    weight = -100
-    url = "/getting-started/"
-    parent = "about"
+  name = "Link"
+  url = "/link/"
+  parent = "press"
+[[menu.footer]]
+  name = "Link"
+  url = "/link/"
+  parent = "press"
+[[menu.footer]]
+  name = "Link"
+  url = "/link/"
+  parent = "press"
+[[menu.footer]]
+  name = "Link"
+  url = "/link/"
+  parent = "press"
+
+[[menu.footer]]
+  weight = 2
+  name = "About:"
+  url = "/about/"
+  identifier = "about"
+[[menu.footer]]
+  name = "Wikipedia"
+  url = "/Wikipedia/"
+  parent = "about"
+[[menu.footer]]
+  name = "Biography"
+  url = "/Biography/"
+  parent = "about"
+[[menu.footer]]
+  name = "Head Shot"
+  url = "/Head Shot/"
+  parent = "about"
+
+[[menu.footer]]
+  weight = 3
+  name = "Social:"
+  url = "/social/"
+  identifier = "social"
+[[menu.footer]]
+  name = "Twitter"
+  url = "/Twitter/"
+  parent = "social"
+[[menu.footer]]
+  name = "Facebook"
+  url = "/Facebook/"
+  parent = "social"
+[[menu.footer]]
+  name = "LinkedIn"
+  url = "/LinkedIn/"
+  parent = "social"
+
+[[menu.footer]]
+  weight = 4
+  name = "Patents:"
+  url = "/patents/"
+  identifier = "patents"
+[[menu.footer]]
+  name = "US 6,757,724"
+  url = "/US 6,757,724/"
+  parent = "patents"
+[[menu.footer]]
+  name = "US 6,704,797"
+  url = "/US 6,704,797/"
+  parent = "patents"
+
+[[menu.footer]]
+  weight = 5
+  name = "Experience:"
+  url = "/experience/"
+  identifier = "experience"
+[[menu.footer]]
+  name = "Apple"
+  url = "/Apple/"
+  parent = "experience"
+[[menu.footer]]
+  name = "IBM"
+  url = "/IBM/"
+  parent = "experience"
+[[menu.footer]]
+  name = "Chaotic Moon"
+  url = "/Chaotic Moon/"
+  parent = "experience"
+[[menu.footer]]
+  name = "Honest Dollar"
+  url = "/Honest Dollar/"
+  parent = "experience"
+[[menu.footer]]
+  name = "Goldman Sachs"
+  url = "/Goldman Sachs/"
+  parent = "experience"
+
+[[menu.footer]]
+  weight = 6
+  name = "Projects:"
+  url = "/projects/"
+  identifier = "projects"
+[[menu.footer]]
+  name = "NonProfit"
+  url = "/NonProfit/"
+  parent = "projects"
+[[menu.footer]]
+  name = "Charity"
+  url = "/Charity/"
+  parent = "projects"
