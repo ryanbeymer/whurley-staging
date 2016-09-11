@@ -6630,6 +6630,9 @@ header {
 header a {
   color: #FFFFFF;
 }
+header .social .nav-item + .nav-item {
+  margin-left: 48px;
+}
 
 .btn-play img {
   position: relative;

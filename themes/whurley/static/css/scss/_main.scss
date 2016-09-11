@@ -89,6 +89,11 @@ header {
   a {
     color: $white;
   }
+  .social {
+    .nav-item + .nav-item {
+      margin-left: 48px;
+    }
+  }
 }
 
 .btn-play {
