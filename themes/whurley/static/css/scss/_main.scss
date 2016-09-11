@@ -176,6 +176,21 @@ header {
 
 .gallery-imgs { 
   background-color: $black;
+  padding-top: 180px;
+  .btn.btn-primary { 
+    color: $white;
+    border: 0;
+    background-color: transparent;
+    margin-top: 82px;
+    margin-bottom: 82px;
+    &:hover { 
+      color: $white;
+    }
+  }
+}
+
+.video-section { 
+  padding-bottom: 180px;
 }
 
 .thumbnail-content { 

@@ -6703,6 +6703,21 @@ header a {
 
 .gallery-imgs {
   background-color: #000000;
+  padding-top: 180px;
+}
+.gallery-imgs .btn.btn-primary {
+  color: #FFFFFF;
+  border: 0;
+  background-color: transparent;
+  margin-top: 82px;
+  margin-bottom: 82px;
+}
+.gallery-imgs .btn.btn-primary:hover {
+  color: #FFFFFF;
+}
+
+.video-section {
+  padding-bottom: 180px;
 }
 
 .thumbnail-content [class*="col-"] {
