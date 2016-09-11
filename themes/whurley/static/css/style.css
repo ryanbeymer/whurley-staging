@@ -6766,6 +6766,7 @@ header .social .nav-item + .nav-item {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  font-weight: 600;
 }
 .thumbnail-content [class*="col-"] > a div img {
   margin-right: 9px;
