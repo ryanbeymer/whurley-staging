@@ -44,7 +44,7 @@ p {
   background-color: $black;
   height: 100vh;
   position: relative;
-  margin-top: -54px;
+  margin-top: -73px;
   .cover-content {
     top: 0;
     position: absolute;
@@ -86,12 +86,30 @@ header {
   background-color: transparent;
   position: relative;
   z-index: 2;
+  //background-color: $black;
+  .container-fluid { 
+    max-width: 1350px;
+  }
   a {
     color: $white;
   }
+  .navbar {
+    padding-top: 24px;
+    .navbar-nav {
+      .nav-item {
+        margin-left: 48px;
+        font-size: 18px;
+      }
+    }
+    .navbar-toggler {
+      color: $white;
+    }
+  }
   .social {
-    .nav-item + .nav-item {
+    padding-top: 10px;
+    .nav-item + .nav-item  {
       margin-left: 48px;
+
     }
   }
 }

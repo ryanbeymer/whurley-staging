@@ -6583,7 +6583,7 @@ p {
   background-color: #000000;
   height: 100vh;
   position: relative;
-  margin-top: -54px;
+  margin-top: -73px;
 }
 .cover .cover-content {
   top: 0;
@@ -6627,8 +6627,24 @@ header {
   position: relative;
   z-index: 2;
 }
+header .container-fluid {
+  max-width: 1350px;
+}
 header a {
   color: #FFFFFF;
+}
+header .navbar {
+  padding-top: 24px;
+}
+header .navbar .navbar-nav .nav-item {
+  margin-left: 48px;
+  font-size: 18px;
+}
+header .navbar .navbar-toggler {
+  color: #FFFFFF;
+}
+header .social {
+  padding-top: 10px;
 }
 header .social .nav-item + .nav-item {
   margin-left: 48px;
