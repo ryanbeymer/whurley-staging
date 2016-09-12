@@ -1,0 +1,15 @@
+<script src="{{ "/js/jquery.min.js" | absURL }}"></script>
+<script src="{{ "/js/bootstrap.min.js" | absURL }}"></script>
+<link rel="stylesheet" href="{{ "/js/lity/lity.min.css" | absURL }}">
+<script src="{{ "/js/lity/lity.min.js" | absURL }}"></script>
+<script src="{{ "/js/jquery.waypoints.min.js" | absURL }}"></script>
+<script src="{{ "/js/site.js" | absURL }}"></script>
+
+{{ with .Site.Params.googleAnalytics }}
+<script>
+  var _gaq=[['_setAccount','{{ . }}'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+{{ end }}
