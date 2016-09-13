@@ -6,15 +6,15 @@ theme = "whurley"
 [[menu.main]]
   Name = "digital citizen"
   Title = "digital citizen"
-  URL = "#digital"
+  URL = "/#digital-citizen"
 [[menu.main]]
   Name = "speaker + author"
   Title = "speaker + author"
-  URL = "#speaker"
+  URL = "/#speaker-author"
 [[menu.main]]
   Name = "entrepreneur + innovator"
   Title = "entrepreneur + innovator"
-  URL = "#entrepreneur"
+  URL = "/#entrepreneur-innovator"
 
 
 
