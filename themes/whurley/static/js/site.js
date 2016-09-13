@@ -36,7 +36,7 @@ $(function(){
   
   var mainWaypoints = ['digital-citizen', 'entrepreneur-innovator', 'speaker-author'];
   var wayPointContents = [];
-  var menu = $('#exCollapsingNavbar2').clone();
+  var menu = $('#main-header').clone();
   
   for(var i=0; i<mainWaypoints.length;i++){
     var waypointElement =  document.getElementById(mainWaypoints[i]);
