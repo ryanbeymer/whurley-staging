@@ -107,6 +107,9 @@ header {
       .nav-item {
         margin-left: 48px;
         font-size: 18px;
+        a:hover{
+          color: $white;
+        }
       }
     }
     .navbar-toggler {
@@ -119,6 +122,13 @@ header {
       margin-left: 48px;
 
     }
+  }
+}
+// active item in the menu
+.active-nav-item{
+  a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #000;
   }
 }
 
