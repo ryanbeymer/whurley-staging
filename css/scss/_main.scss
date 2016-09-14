@@ -128,7 +128,7 @@ header {
       }
     }
     .navbar-brand {
-      background: url('../../whurley-logo.png') center / contain no-repeat;
+      background: url('../whurley-logo.png') center / contain no-repeat;
       width: 117px;
       height: 30px;
     }
@@ -147,7 +147,7 @@ header {
 // active item in the menu
 header.active-pane-menu {
   .navbar-brand {
-    background-image: url('../../whurley-logo-black.png');
+    background-image: url('../whurley-logo-black.png');
   }
   .navbar .navbar-nav .nav-item a{
     color: $black;

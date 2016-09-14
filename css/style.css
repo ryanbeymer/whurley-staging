@@ -6677,7 +6677,7 @@ header .navbar .navbar-nav .nav-item a:hover {
   color: #FFFFFF;
 }
 header .navbar .navbar-brand {
-  background: url("../../whurley-logo.png") center/contain no-repeat;
+  background: url("../whurley-logo.png") center/contain no-repeat;
   width: 117px;
   height: 30px;
 }
@@ -6692,7 +6692,7 @@ header .social .nav-item + .nav-item {
 }
 
 header.active-pane-menu .navbar-brand {
-  background-image: url("../../whurley-logo-black.png");
+  background-image: url("../whurley-logo-black.png");
 }
 header.active-pane-menu .navbar .navbar-nav .nav-item a {
   color: #000000;
