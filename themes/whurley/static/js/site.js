@@ -64,11 +64,32 @@ $(function(){
           }
         });
         $(this)[0].element.innerHTML = menu[0].outerHTML + $(this)[0].element.innerHTML;
+
       },
       offset: "20px"
       
     });
   }
+
+  //Instafeed
+  var feed = new Instafeed({
+    accessToken: '1774741907.ba4c844.16245f6b6ef34f35b3bd57eb39fbe266',
+    resolution: 'standard_resolution',
+    template: '<div class="col-md-3"><a href="{{link}}" target="_blank"><div class="fadeInUp animated" style="background-image: url({{image}});"></div></a></div>',
+    get: 'user',
+    userId: '609171954', //whurley
+    /* uncomment once a tag is provided
+    filter: function(image) {
+      return image.tags.indexOf('unicorn') >= 0;
+    }*/
+  });
+  feed.run();
+
+  // bind the load more button
+  var loadButton = document.getElementById('more-instagram');
+  loadButton.addEventListener('click', function() {
+    feed.next();
+  });
   
 
   

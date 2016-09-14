@@ -236,6 +236,15 @@ header.active-pane-menu {
 .gallery-imgs { 
   background-color: $black;
   padding-top: 180px;
+  #instafeed { 
+    [class*="col-"] {
+      height: 303px;
+      div { 
+        background-size: cover;
+        height: 100%;
+      }
+    }
+  }
   .btn.btn-primary { 
     color: $white;
     border: 0;

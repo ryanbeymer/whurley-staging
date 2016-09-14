@@ -6757,6 +6757,13 @@ header.active-pane-menu .navbar .navbar-nav .nav-item a:hover {
   background-color: #000000;
   padding-top: 180px;
 }
+.gallery-imgs #instafeed [class*="col-"] {
+  height: 303px;
+}
+.gallery-imgs #instafeed [class*="col-"] div {
+  background-size: cover;
+  height: 100%;
+}
 .gallery-imgs .btn.btn-primary {
   color: #FFFFFF;
   border: 0;
