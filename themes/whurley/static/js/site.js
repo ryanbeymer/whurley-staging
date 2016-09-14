@@ -51,7 +51,7 @@ $(function(){
           resetElem.innerHTML = wayPointContents[x];
         }
         menu.addClass('active-pane-menu');
-        menu[0].style.marginTop = "-100px";
+        menu[0].style.marginTop = "-180px";
         menu[0].style.paddingBottom = "100px";
         var activeMenu = mainWaypoints[currentWayPoint];
         $(menu.find('.navbar-nav')[0].children).each(function(i, nav){
