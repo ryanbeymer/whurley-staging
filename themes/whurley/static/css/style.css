@@ -6558,12 +6558,22 @@ h1 {
   font-size: 72px;
   letter-spacing: 0px;
 }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 
 h2 {
   font-weight: 100;
   font-size: 32px;
   letter-spacing: 0px;
   line-height: 40px;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+  }
 }
 
 h3 {
@@ -6617,16 +6627,31 @@ p {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.cover .cover-content h1 {
+@media (max-width: 767px) {
+  .cover .cover-content {
+    width: 300px;
+  }
+}
+@media (max-width: 543px) {
+  .cover .cover-content {
+    width: 280px;
+  }
+}
+.cover .cover-content h1, .cover .cover-content p, .cover .cover-content a {
   margin-left: 108px;
+}
+@media (max-width: 767px) {
+  .cover .cover-content h1, .cover .cover-content p, .cover .cover-content a {
+    margin-left: 0;
+  }
+}
+.cover .cover-content h1 {
   margin-bottom: 24px;
 }
 .cover .cover-content p {
-  margin-left: 108px;
   margin-bottom: 85px;
 }
 .cover .cover-content a {
-  margin-left: 108px;
   color: #FFFFFF;
 }
 
@@ -6699,6 +6724,13 @@ header.active-pane-menu .navbar .navbar-nav .nav-item a:hover {
   position: absolute;
   bottom: 0;
 }
+@media (max-width: 767px) {
+  .page-jump-container .page-jump {
+    height: 54px;
+    width: 54px;
+    line-height: 54px;
+  }
+}
 .page-jump-container .page-jump.invert {
   -ms-transform: rotate(180deg);
   /* IE 9 */
@@ -6717,6 +6749,11 @@ header.active-pane-menu .navbar .navbar-nav .nav-item a:hover {
 }
 .section-head h1, .section-head p, .section-head img {
   margin-left: 110px;
+}
+@media (max-width: 767px) {
+  .section-head h1, .section-head p, .section-head img {
+    margin-left: 0;
+  }
 }
 .section-head h1 + img, .section-head p + img, .section-head img + img {
   margin-left: 32px;
@@ -6737,6 +6774,11 @@ header.active-pane-menu .navbar .navbar-nav .nav-item a:hover {
 }
 .article-overview .row:last-child:after {
   border: 0;
+}
+@media (max-width: 767px) {
+  .article-overview [class*="col-"]:nth-child(1) img {
+    margin-bottom: 10px;
+  }
 }
 .article-overview [class*="col-"]:nth-child(2) img {
   margin-bottom: 19px;
@@ -6803,6 +6845,22 @@ header.active-pane-menu .navbar .navbar-nav .nav-item a:hover {
 }
 .thumbnail-content [class*="col-"] > a div h2 {
   margin-top: 14px;
+}
+@media (max-width: 767px) {
+  .thumbnail-content [class*="col-"] > a {
+    width: 80%;
+    padding-left: 10px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+100&1+45,0+100 */
+    background: -moz-linear-gradient(left, white 1%, white 75%, rgba(255, 255, 255, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, white 1%, white 75%, rgba(255, 255, 255, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, white 1%, white 75%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+  .thumbnail-content [class*="col-"] > a div {
+    padding-right: 10px;
+  }
 }
 
 footer {
