@@ -66,8 +66,7 @@ $(function(){
         $(this)[0].element.innerHTML = menu[0].outerHTML + $(this)[0].element.innerHTML;
 
       },
-      offset: "20px"
-      
+      offset: "100px"
     });
   }
 
