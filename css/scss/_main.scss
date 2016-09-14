@@ -1,0 +1,361 @@
+body { 
+  font-family: $graphik; 
+  color: $black;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1264px;
+  }
+}
+
+a { 
+  color: $black;
+  &:hover { 
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+h1 { 
+  font-weight: 200;
+  font-size: 72px;
+  letter-spacing: 0px;
+  @include media-breakpoint-down(sm) {
+    font-size: 40px;
+  }
+}
+h2 { 
+  font-weight: 100;
+  font-size: 32px;
+  letter-spacing: 0px;
+  line-height: 40px;
+  @include media-breakpoint-down(sm) {
+    font-size: 24px;
+  }
+}
+h3 { 
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+p { 
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 30px;
+}
+
+//This removes the gutter from all classes below
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+.cover { 
+  background-color: $black;
+  height: 100vh;
+  position: relative;
+  margin-top: -73px;
+  .cover-content {
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    color: $white;
+    max-width: 703px;
+    /* Align the bootstrap's container vertically */
+    -webkit-box-align : center;
+    -webkit-align-items : center;
+    -moz-box-align : center;
+    -ms-flex-align : center;
+    align-items : center;  /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+     Therefore, we should use the following declarations to get it centered again */
+    -webkit-box-pack : center;
+    -moz-box-pack : center;
+    -ms-flex-pack : center;
+    -webkit-justify-content : center;
+    justify-content : center;
+    @include media-breakpoint-down(sm) {
+      width: 300px;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 280px;
+    }
+    h1, p, a { 
+      margin-left: 108px;
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+      }
+    }
+    h1 { 
+      margin-bottom: 24px;
+    }
+    p { 
+      margin-bottom: 85px;
+    }
+    a { 
+      color: $white;
+    }
+  }
+}
+
+header { 
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  //background-color: $black;
+  .container-fluid { 
+    max-width: 1350px;
+  }
+  a {
+    color: $white;
+  }
+  .navbar {
+    padding-top: 24px;
+    .navbar-nav {
+      .nav-item {
+        margin-left: 48px;
+        font-size: 18px;
+        a:hover{
+          color: $white;
+        }
+      }
+    }
+    .navbar-brand {
+      background: url('../../whurley-logo.png') center / contain no-repeat;
+      width: 117px;
+      height: 30px;
+    }
+    .navbar-toggler {
+      color: $white;
+    }
+  }
+  .social {
+    padding-top: 10px;
+    .nav-item + .nav-item  {
+      margin-left: 48px;
+
+    }
+  }
+}
+// active item in the menu
+header.active-pane-menu {
+  .navbar-brand {
+    background-image: url('../../whurley-logo-black.png');
+  }
+  .navbar .navbar-nav .nav-item a{
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+.active-nav-item{
+  a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.btn-play {
+  img {
+    position: relative;
+    top: -1px;
+    padding-right: 16px;
+  }
+}
+
+.page-jump-container {
+  position: relative;
+  .page-jump  {
+    background-color: $primary;
+    height: 108px;
+    width: 108px;
+    line-height: 108px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    @include media-breakpoint-down(sm) {
+      height: 54px;
+      width: 54px;
+      line-height: 54px;
+    }
+  
+    &.invert {
+      -ms-transform: rotate(180deg); /* IE 9 */
+      -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+      transform: rotate(180deg);
+      bottom: 72px
+    }
+  }
+}
+
+.section-head { 
+  padding-top: 180px;
+  padding-bottom: 180px;
+  + .section-head { 
+    padding-top: 0;
+  }
+  h1,p,img {
+    margin-left: 110px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
+    + img { 
+      margin-left: 32px;
+    }
+  }
+  h1, img {
+   margin-bottom: 25px; 
+  }
+  p { 
+    max-width: 723px;
+  }
+}
+
+.article-overview { 
+  .row { 
+    &:after {
+      content: "";
+      display: block;
+      border-bottom: 1px solid rgba($gray,.15);
+      margin: 48px 15px;
+      width: 100%;
+    }
+    &:last-child:after { 
+      border: 0;
+    }
+  }
+  //only add the margin to the right side image
+  [class*="col-"] {
+    &:nth-child(1) {
+      img { 
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      img { 
+        margin-bottom: 19px;
+      }
+    }
+  }
+  h2 {
+    margin-bottom: 16px;
+  }
+  h3 {
+    margin-bottom: 29px;
+  }
+  p {
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 30px;
+  }
+}
+
+.gallery-imgs { 
+  background-color: $black;
+  padding-top: 180px;
+  #instafeed { 
+    [class*="col-"] {
+      height: 303px;
+      div { 
+        background-size: cover;
+        height: 100%;
+      }
+    }
+  }
+  .btn.btn-primary { 
+    color: $white;
+    border: 0;
+    background-color: transparent;
+    margin-top: 82px;
+    margin-bottom: 82px;
+    &:hover { 
+      color: $white;
+    }
+  }
+}
+
+.video-section { 
+  padding-bottom: 180px;
+}
+
+.thumbnail-content { 
+  [class*="col-"] {
+    position: relative;
+    > a {
+      width: 360px;
+      height: 260px;
+      background-color: $white;
+      position: absolute;
+      padding-left: 40px;
+      padding-right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      div { 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 600;
+        img { 
+          margin-right: 9px;
+        }
+        h2 { 
+          margin-top: 14px;
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      > a {
+        width: 80%;
+        padding-left: 10px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+100&1+45,0+100 */
+        background: -moz-linear-gradient(left, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        div { 
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+footer { 
+  background-color: $black; 
+  padding-top: 180px;
+  padding-bottom: 180px;
+  color: $white;
+  a {
+    font-size: 18px;
+    color: $white;
+  }
+  li.sub-menu { 
+    list-style: none;
+    > span {
+      font-size: 18px;
+      text-decoration: underline;
+      margin-bottom: 10px;
+      display: block;
+      font-weight: 600;
+    }
+    ul.sub {
+      list-style: none; 
+      padding-left: 0;
+      li { 
+        margin-bottom: 10px;
+        a:hover { 
+          color: $white;
+        }
+      }
+    }
+  }
+}
