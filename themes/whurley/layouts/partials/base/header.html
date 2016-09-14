@@ -22,7 +22,7 @@
             {{ range .Site.Menus.social }}
             <li class="nav-item">
               <a href="{{ .URL | absURL }}" target="_blank">
-                  <img src="{{ .Identifier  | relURL }}" class="img-fluid">
+                <i class="fa {{ .Identifier }}" aria-hidden="true" title="{{ .Name }}"></i>
               </a>
             </li>
             {{ end }}
