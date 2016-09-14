@@ -20,12 +20,18 @@ h1 {
   font-weight: 200;
   font-size: 72px;
   letter-spacing: 0px;
+  @include media-breakpoint-down(sm) {
+    font-size: 40px;
+  }
 }
 h2 { 
   font-weight: 100;
   font-size: 32px;
   letter-spacing: 0px;
   line-height: 40px;
+  @include media-breakpoint-down(sm) {
+    font-size: 24px;
+  }
 }
 h3 { 
   font-weight: 600;
@@ -75,16 +81,25 @@ p {
     -ms-flex-pack : center;
     -webkit-justify-content : center;
     justify-content : center;
-    h1 { 
+    @include media-breakpoint-down(sm) {
+      width: 300px;
+    }
+    @include media-breakpoint-down(xs) {
+      width: 280px;
+    }
+    h1, p, a { 
       margin-left: 108px;
+      @include media-breakpoint-down(sm) {
+        margin-left: 0;
+      }
+    }
+    h1 { 
       margin-bottom: 24px;
     }
     p { 
-      margin-left: 108px;
       margin-bottom: 85px;
     }
     a { 
-      margin-left: 108px;
       color: $white;
     }
   }
@@ -107,7 +122,15 @@ header {
       .nav-item {
         margin-left: 48px;
         font-size: 18px;
+        a:hover{
+          color: $white;
+        }
       }
+    }
+    .navbar-brand {
+      background: url('../../whurley-logo.png') center / contain no-repeat;
+      width: 117px;
+      height: 30px;
     }
     .navbar-toggler {
       color: $white;
@@ -119,6 +142,24 @@ header {
       margin-left: 48px;
 
     }
+  }
+}
+// active item in the menu
+header.active-pane-menu {
+  .navbar-brand {
+    background-image: url('../../whurley-logo-black.png');
+  }
+  .navbar .navbar-nav .nav-item a{
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+.active-nav-item{
+  a{
+    padding-bottom: 2px;
+    border-bottom: 1px solid $black;
   }
 }
 
@@ -140,6 +181,11 @@ header {
     text-align: center;
     position: absolute;
     bottom: 0;
+    @include media-breakpoint-down(sm) {
+      height: 54px;
+      width: 54px;
+      line-height: 54px;
+    }
   
     &.invert {
       -ms-transform: rotate(180deg); /* IE 9 */
@@ -158,6 +204,9 @@ header {
   }
   h1,p,img {
     margin-left: 110px;
+    @include media-breakpoint-down(sm) {
+      margin-left: 0;
+    }
     + img { 
       margin-left: 32px;
     }
@@ -185,9 +234,13 @@ header {
   }
   //only add the margin to the right side image
   [class*="col-"] {
-    //no gutter
-    //padding-right:0;
-    //padding-left:0;
+    &:nth-child(1) {
+      img { 
+        @include media-breakpoint-down(sm) {
+          margin-bottom: 10px;
+        }
+      }
+    }
     &:nth-child(2) {
       img { 
         margin-bottom: 19px;
@@ -210,6 +263,15 @@ header {
 .gallery-imgs { 
   background-color: $black;
   padding-top: 180px;
+  #instafeed { 
+    [class*="col-"] {
+      height: 303px;
+      div { 
+        background-size: cover;
+        height: 100%;
+      }
+    }
+  }
   .btn.btn-primary { 
     color: $white;
     border: 0;
@@ -248,6 +310,19 @@ header {
         }
         h2 { 
           margin-top: 14px;
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      > a {
+        width: 80%;
+        padding-left: 10px;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+1,ffffff+100&1+45,0+100 */
+        background: -moz-linear-gradient(left, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(255,255,255,1) 1%,rgba(255,255,255,1) 75%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        div { 
+          padding-right: 10px;
         }
       }
     }

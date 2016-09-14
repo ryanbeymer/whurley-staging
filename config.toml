@@ -6,36 +6,36 @@ theme = "whurley"
 [[menu.main]]
   Name = "digital citizen"
   Title = "digital citizen"
-  URL = "#digital"
+  URL = "/#digital-citizen"
 [[menu.main]]
   Name = "speaker + author"
   Title = "speaker + author"
-  URL = "#speaker"
+  URL = "/#speaker-author"
 [[menu.main]]
   Name = "entrepreneur + innovator"
   Title = "entrepreneur + innovator"
-  URL = "#entrepreneur"
+  URL = "/#entrepreneur-innovator"
 
 
 
 [[menu.social]]
   Name = "Facebook"
-  Identifier = "Facebook.png"
+  Identifier = "fa-facebook"
   URL = "https://www.facebook.com/whurley/"
   weight = 1
 [[menu.social]]
   Name = "Twitter"
-  Identifier = "Twitter.png"
+  Identifier = "fa-twitter"
   URL = "https://twitter.com/whurley"
   weight = 2
 [[menu.social]]
   Name = "Wikipedia"
-  Identifier = "Wikipedia.png"
+  Identifier = "fa-wikipedia-w"
   URL = "https://en.wikipedia.org/wiki/Whurley"
   weight = 3
 [[menu.social]]
   Name = "Vimeo"
-  Identifier = "Vimeo.png"
+  Identifier = "fa-vimeo"
   URL = "https://vimeo.com/whurley"
   weight = 4
 
